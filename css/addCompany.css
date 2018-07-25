@@ -1,0 +1,111 @@
+/*
+* @Author: Dory
+*/
+.addCompany-title{
+    font-weight: bold;
+    font-size:16px;
+    color:#333;
+    padding: 20px 0;
+    padding-bottom: 0
+}
+.addCompany-subtitle{
+    width: 100%;
+    height: 20px;
+    border-left: 4px solid #f86f4d;
+    font-size: 14px;
+    color: #040606;
+    padding-left: 10px;
+    line-height: 20px;
+    padding-bottom: 10px;
+    margin-top:30px;
+}
+.addCompany-info-box{
+    width:100%;
+    border-top: 1px solid #eaeaea;
+    margin-top: 10px;
+}
+.addCompany-info-item{
+    margin-top: 30px;
+    position: relative;
+}
+.addCompany-info-item.dbf{
+    display: flex;
+}
+.addCompany-info-item span:first-child{
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin-right:18px;
+}
+.addCompany-info-item.dbf span:first-child{
+    padding-top: 5px;
+}
+.company-bgInp span:first-child,.company-logoInp span:first-child,.company-ecodeInp span:first-child{
+    position: absolute;
+    top: 40px;
+}
+.addCompany-info-item input{
+    width: 31.5%;
+    border-radius:6px;
+}
+.addCompany-info-item select{
+    width: 9.66%;
+    margin-right: 1%;
+    border-radius:6px;
+}
+.addCompany-info-item textarea{
+    width: 31.5%;
+    height: 100px;
+    border-radius:6px;
+}
+.upload{
+    display: inline-block;
+    width: 238px;
+    height: 110px;
+    border-radius:6px;
+    border:1px solid #dddddd;
+    position: relative;
+    background:url('../images/upload-bg.jpg') no-repeat center center;
+    margin-left: 140px;
+}
+.addCompany-info-item.company-bgInp input,.addCompany-info-item.company-logoInp input,.addCompany-info-item.company-ecodeInp input{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.addCompany-info-item.company-logoInp .upload,.addCompany-info-item.company-ecodeInp .upload{
+    width:110px;
+    height: 110px;
+}
+.advice-size{
+    margin-left: 140px;
+    margin-top:12px;
+    color: #999;
+}
+.addCompany-btnBox input[type='button']{
+    width:100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border:1px solid #f86f4d;
+    border-radius: 6px;
+    font-size:16px;
+    margin-right: 30px;
+    outline:none;
+    margin-top: 38px;
+}
+.addCompany-save{
+    background:#f86f4d;
+    color:#fff;
+    margin-left: 20px;
+}
+.addCompany-back{
+    background:#fff;
+    color:#f86f4d;
+}
+.model-alert-btnBox input[type='button']{
+    margin-right:0;
+}

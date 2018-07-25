@@ -1,0 +1,104 @@
+/*
+* @Author: Dory
+*/
+
+.tools-box{
+    width: 100%;
+    height: auto;
+    background: #f3f3f3;
+    margin-top: 22px;
+    padding: 12px 20px 0px;
+    overflow: hidden;
+}
+.checkBox{
+    width:37px;
+}
+.welfare-name{
+    flex:1;
+    min-width: 140px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.mw100{
+    min-width:100px;
+}
+.mw80{
+    min-width:80px;
+}
+.list-item-info{
+    height: 80px;
+    position: relative;
+}
+.list-item-info:nth-child(odd){
+    background:#f9f9f9;
+}
+.list-item-info .welfare-name{
+    display: block;
+    line-height: 80px;
+}
+.welfare-name img{
+    width:50px;
+    height: 50px;
+    margin-right:5px;
+}
+.opreat{
+    width: 20%;
+    min-width:190px;
+}
+.op-item{
+    margin-right:10px;
+    color: #58acfb;
+}
+.op-item:hover,.list-tab-item:hover{
+    cursor: pointer;
+}
+.ecode-box{
+    display: none;
+    width:334px;
+    height: 250px;
+    border: 1px solid #ddd;
+    background:#fff;
+    z-index: 999;
+    position: absolute;
+    right: 124px;
+    top: 58px;
+    text-align: left;
+    color: #101010;
+    padding: 20px 20px 16px;
+}
+.ecode-box div{
+    position: relative;
+}
+.ecode-box input[type='text']{
+    height: 40px;
+    width: 100%;
+    border-radius:4px;
+    border:1px solid #F96E4A;
+    margin-bottom: 20px;
+}
+.ecode-box input[type='button']{
+    width：57px;
+    height:40px;
+    background:#F96E4A;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius:4px;
+    border:none;
+    outline: none;
+    color: #fff;
+}
+.ecode-box .code-img{
+    display: inline-block;
+    width:90px;
+    height: 90px;
+    border:1px solid #bbb;
+    padding: 5px;
+    margin-right:10px;
+    vertical-align: middle;
+}
+.ecode-box span{
+    color:#41B1E0;
+    line-height: 90px;
+}

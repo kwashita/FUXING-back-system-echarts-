@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>福利企业</title>
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link rel=stylesheet href="css/bootstrap.css">
+        <link href="css/style.css" rel="stylesheet" />
+        <link rel=stylesheet href="css/common.css">
+        <link rel=stylesheet href="css/companyList.css">
+        <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <style type="text/css">
+            html{
+                background:#f3f7fb;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="page-header header">
+            <h1>群福利管理平台
+                <div class="change_user">
+                    <p class="quite"><span class="quite1">修改密码</span><span class="quite2">退出</span></p>
+                    <p style="margin-top: 28px;"><span>admin</span>,欢迎您登录互动服务平台管理平台</p>
+                </div>
+            </h1>
+        </div>
+        <!--内容区-->
+        <div class="fl_wrap">
+            <!--左侧导航-->
+            <ul class="list-group fl_left_nav">
+                <li class="list-group-item ">
+                    <a href="数据概览.html">数据概览</a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="福利企业.html">福利企业</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="福利管理.html">福利管理</a>
+                </li>
+                <li class="list-group-item sed">
+                    <a href="福星中心.html">福星中心</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="福群管理.html">福群管理</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="提现记录.html">提现记录</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="财务管理.html">财务管理</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="系统设置.html">系统设置</a>
+                </li>
+            </ul>
+
+            <!--右侧内容区-->
+            <div class="fl_rightcount">
+                <!--右侧第一层-->
+                <!--面包屑导航-->
+                <div class="container">
+                    <div class="comm-localtion row">
+                        <i class="comm-icon-localtion"></i>
+                        <span class="">当前位置：<i class="comm-text-localtion">福利管理</i></span>
+                    </div>
+                    <div class="content">
+                        <div class="tools-box">
+                            <div class="row">
+                                <input class="span4 inp" type="text" placeholder="请输入分社名称/联系人/联系方式" name="" value="">
+                                <span class="tools-title">地域</span>
+                                <select class="span2 select" name="">
+                                    <option value="">全部</option>
+                                </select>
+                                <select class="span2 select" name="">
+                                    <option value="">全部</option>
+                                </select>
+                                <select class="span2 select" name="">
+                                    <option value="">全部</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <span class="tools-title">下单时间</span>
+                                <select class="span2 select" name="">
+                                    <option value="">全部</option>
+                                </select>
+                                <span class="to-line">—</span>
+                                <select class="span2 select" name="">
+                                    <option value="">全部</option>
+                                </select>
+                                <input type="button" class="button search-btn orange-btn" name="" value="搜索">
+                                <input type="button" class="button gray-btn" name="" value="重置">
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <input class="button search-btn orange-btn" type="button" name="" value="+ 添加企业">
+                        </div>
+                        <div class="list-content">
+                            <div class="list-item row">
+                                <div class="checkBox">
+                                    <input type="checkbox">
+                                </div>
+                                <div class="welfare-name">企业信息</div>
+                                <div class="mw100">联系方式</div>
+                                <div class="mw80">福利总数</div>
+                                <div class="mw100">进行中</div>
+                                <div class="mw100">核销人数</div>
+                                <div class="mw100">余额</div>
+                                <div class="mw100">创建时间</div>
+                                <div class="opreat">操作</div>
+                            </div>
+                            <div class="list-item list-item-info row">
+                                <div class="checkBox" >
+                                    <input type="checkbox">
+                                </div>
+                                <div class="welfare-name" title='爱康国宾'>
+                                    <img src="images/wenhao.png" alt="">爱康国宾</div>
+                                <div class="mw100">18519275483</div>
+                                <div class="mw80">41</div>
+                                <div class="mw100">6</div>
+                                <div class="mw100">6</div>
+                                <div class="mw100">￥ 30.00 <br>（3000福币）</div>
+                                <div class="mw100">2018.05.15<br>12:12:12</div>
+                                <div class="opreat">
+                                    <img class="op-item ecode-hover" src="images/icon-ecode.png" alt="">
+                                    <img class="op-item" src="images/icon-edit.png" alt="">
+                                    <img class="op-item" src="images/icon-delate.png" alt="">
+                                    <span class="op-item spread">核销员</span>
+                                    <span class="op-item spread">企业资产</span>
+                                    <span class="op-item spread">更多</span>
+                                    <!-- 二维码 -->
+                                    <div class="ecode-box">
+                                        <p>企业链接</p>
+                                        <div>
+                                            <input type="text" value="https://www.baidu.com">
+                                            <input type="button" name="" value="复制">
+                                        </div>
+                                        <p>企业二维码</p>
+                                        <div>
+                                            <div class="code-img">
+                                                <img src="images/icon-succ.png" alt="">
+                                            </div>
+                                            <span>下载二维码</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-content-foot row">
+                                <div class="foot-left">
+                                    <div class="selectAll">
+                                        <input id="selectAll" type="checkbox" name="" value="">
+                                        <span>全选</span>
+                                    </div>
+                                    <div class="delate-btn"></div>
+                                </div>
+                                <div class="foot-right">
+                                    <span>共有 22条 记录，每页显示</span>
+                                    <select name="" class="showItems">
+                                        <option value="">10</option>
+                                    </select>
+                                    <i class="last-page changePage disabled">&lt;</i>
+                                    <span>1/3</span>
+                                    <i class="next-page changePage">&gt;</i>
+                                    <input type="text" class="turnPages" value="1">
+                                    <input type="button" name="" value="跳转" class="turnPages-btn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 删除提示弹框 -->
+                    <div class="model-alert delate-alert">
+                        <div class="model-alert-content">
+                            <div class="model-alert-title">
+                                <span>提示</span>
+                                <i class="icon-close"></i>
+                            </div>
+                            <div class="wenhao-green"></div>
+                            <p class="succ-text">是否确认删除选中福利</p>
+                            <div class="model-alert-btnBox">
+                                <input class="model-alert-btn sure" type="button" name="" value="确定">
+                                <input class="model-alert-btn cancel" type="button" name="" value="取消">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 保存成功提示 -->
+                    <div class="success-tips">
+                        <i class="icon-succ"></i>
+                        <span>保存成功</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        $('.icon-close').click(function(){
+            $('.model-alert').fadeOut(500);
+        })
+        $('.ecode-hover').mouseover(function() {
+            $(this).parent('.opreat').find('.ecode-box').fadeIn(400);
+        });
+        $('.ecode-hover').mouseout(function() {
+            $(this).parent('.opreat').find('.ecode-box').fadeOut(400);
+        });
+    </script>
+</html>

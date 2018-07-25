@@ -1,0 +1,249 @@
+upArrow.png
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>福利管理</title>
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link rel=stylesheet href="css/bootstrap.css">
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel=stylesheet href="css/common.css">
+  <link rel=stylesheet href="css/welfareMg.css">
+  <link rel="stylesheet" href="./css/welfareAnalysis.css">
+  <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+  <script src="js/bootstrap.js" type="text/javascript"></script>
+  <style type="text/css">
+    html {
+      background: #f3f7fb;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-header header">
+    <h1>群福利管理平台
+      <div class="change_user">
+        <p class="quite">
+          <span class="quite1">修改密码</span>
+          <span class="quite2">退出</span>
+        </p>
+        <p style="margin-top: 28px;">
+          <span>admin</span>,欢迎您登录互动服务平台管理平台</p>
+      </div>
+    </h1>
+  </div>
+  <!--内容区-->
+  <div class="fl_wrap">
+    <!--左侧导航-->
+    <ul class="list-group fl_left_nav">
+      <li class="list-group-item ">
+        <a href="数据概览.html">数据概览</a>
+      </li>
+      <li class="list-group-item ">
+        <a href="福利企业.html">福利企业</a>
+      </li>
+      <li class="list-group-item">
+        <a href="福利管理.html">福利管理</a>
+      </li>
+      <li class="list-group-item sed">
+        <a href="福星中心.html">福星中心</a>
+      </li>
+      <li class="list-group-item">
+        <a href="福群管理.html">福群管理</a>
+      </li>
+      <li class="list-group-item">
+        <a href="提现记录.html">提现记录</a>
+      </li>
+      <li class="list-group-item">
+        <a href="财务管理.html">财务管理</a>
+      </li>
+      <li class="list-group-item">
+        <a href="系统设置.html">系统设置</a>
+      </li>
+    </ul>
+
+    <!--右侧内容区-->
+    <div class="fl_rightcount">
+      <!--右侧第一层-->
+      <!--面包屑导航-->
+      <div class="container">
+        <div class="comm-localtion row">
+          <i class="comm-icon-localtion"></i>
+          <span class="">当前位置：
+            <i class="comm-text-localtion">福利管理</i>
+          </span>
+        </div>
+        <div class="content welfare_anal">
+          <p class='anal_title'>福星概览及趋势</p>
+          <div class="anal_count">
+            <div class="anal_person">
+              <p>访问总人数</p>
+              <p class='personNum'>28240</p>
+              <p>
+                <span>较前一日</span>
+                <!-- 上箭头为upArrow下箭头为downArrow -->
+                <span class='upArrow'></span>
+                <span>62</span>
+              </p>
+            </div>
+            <div class="anal_person">
+              <p>累计福星人数</p>
+              <p class='personNum'>28240</p>
+              <p>
+                <span>较前一日</span>
+                <span class='downArrow'></span>
+                <span>62</span>
+              </p>
+            </div>
+            <div class="anal_person">
+              <p>累计金牌福星人数</p>
+              <p class='personNum'>28240</p>
+              <p>
+                <span>较前一日</span>
+                <span class='downArrow'></span>
+                <span>62</span>
+              </p>
+            </div>
+            <div class="anal_person">
+              <p>成交用户人数</p>
+              <p class='personNum'>28240</p>
+              <p>
+                <span>较前一日</span>
+                <span class='downArrow'></span>
+                <span>62</span>
+              </p>
+            </div>
+          </div>
+          <p class='anal_title'>福星分布</p>
+          <div class="anal_region">
+            <ul>
+              <li>
+                <span>地域分布：</span>
+                <div class="region_cities" style='display: none;'>
+                  <span class='citiesCur'>省份</span>
+                  <span class=''>区域</span>
+                  <span class=''>城市</span>
+                </div>
+                <div class="region_content">
+                  <div class="regionChange change_cur" id='anal_map'></div>
+                  <table class="map_list">
+                    <tr>
+                      <td class='map_co'>广东</td>
+                      <td></td>
+                      <td>
+                        <span class='map_le'>135</span>
+                        <span>人</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class='map_co'>北京</td>
+                      <td></td>
+                      <td>
+                        <span class='map_le'>25</span>
+                        <span>人</span>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="regionChange">区域</div>
+                  <div class="regionChange">城市</div>
+                </div>
+              </li>
+              <li>
+                <span>年龄分布：</span>
+                <div id="anal_age"></div>
+              </li>
+              <li>
+                <span>性别分布：</span>
+                <div class="sex_img">
+                  <img class='sexy' src="./images/male.png" alt="">
+                  <img class='sexy_un' src="./images/unknowSex.png" alt="">
+                  <img class='sexy' src="./images/female.png" alt="">
+                </div>
+                <div id="anal_sex"></div>
+              </li>
+              <li>
+                <span>学历分布：</span>
+              </li>
+              <li>
+                <span>行业分布：
+
+                  <div id="anal_industry"></div>
+                </span>
+              </li>
+              <li>
+                <span>终端分布：</span>
+                <div id="anal_phones_fir"></div>
+              </li>
+              <li>
+                <span class='anal_phonesSec_span'>终端分布：</span>
+                <div id="anal_phones_sec"></div>
+                <table class='phones_list'>
+                  <tr>
+                    <th>机型</th>
+                    <th>用户数</th>
+                  </tr>
+                  <tr>
+                    <td>xxxx</td>
+                    <td>
+                      <span class='phones_num'>
+                        1232
+                        <span class='phones_bar'></span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>xxxx</td>
+
+                    <td>
+                      <span class='phones_num'>423
+                        <span class='phones_bar'></span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>xxxx</td>
+                    <td>
+                      <span class='phones_num'>21<span class='phones_bar'></span></span>
+                    </td>
+                  </tr>
+                </table>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src='./js/jquery-1.8.3.min.js'></script>
+  <script src='./js/echarts.min.js'></script>
+  <script src='./js/china.js'></script>
+  <script src='./js/welfare_analysis.js'></script>
+</body>
+<script>
+  $('.spread').click(function () {
+    $('.model-alert.spread-alert').fadeIn(500);
+  })
+  $('.delate-btn').click(function () {
+    $('.model-alert.delate-alert').fadeIn(500);
+  })
+  $('.icon-close,.model-alert-btn.cancel').click(function () {
+    $('.model-alert').fadeOut(500);
+  })
+  $('.model-alert-btn.sure').click(function () {
+    $('.model-alert').fadeOut(500, function () {
+      $('.success-tips').fadeIn().delay(2000).fadeOut();
+    });
+  });
+  $('.ecode-hover').mouseover(function () {
+    $('.ecode-box').fadeIn(400);
+  });
+  $('.ecode-hover').mouseout(function () {
+    $('.ecode-box').fadeOut(400);
+  });
+</script>
+
+</html>

@@ -1,0 +1,212 @@
+/* .container{
+  height: auto;
+}
+.content{
+  height: auto;
+} */
+.welfare_anal{
+  padding: 20px;
+}
+/* 福星概览及趋势 */
+.welfare_anal .anal_title{
+  height: 40px;
+  border-left: 4px solid #EC5467;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  text-indent: 0.8rem;
+}
+.welfare_anal .anal_count{
+  height: 128px;
+  border: 2px solid #EFEFEF;
+  margin-bottom: 25px;
+  font-size: 14px;
+
+}
+.welfare_anal .anal_count .anal_person{
+  float: left;
+  width: 25%;
+  border-right: 2px solid #EFEFEF;
+  height: 126px;
+  padding: 15px 20px 15px 20px;
+}
+.welfare_anal .anal_count .anal_person p{
+  margin-bottom: 15px;
+}
+.welfare_anal .anal_count .anal_person span{
+  color: #9E9E9E;
+}
+.welfare_anal .anal_count .anal_person .upArrow{
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  background: url('../images/upArrow.png') no-repeat;
+  background-size: 22px 22px;
+  vertical-align: middle;
+}
+.welfare_anal .anal_count .anal_person .downArrow{
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  background: url('../images/downArrow.png') no-repeat;
+  background-size: 22px 22px;
+  vertical-align: middle;
+}
+.welfare_anal .anal_count .anal_person .personNum{
+  font-size: 24px;
+  font-weight: bold;
+}
+/* 福星分布 */
+.welfare_anal .anal_region ul li{
+  float: left;
+  border: 2px solid #EFEFEF;
+  width: 49%;
+  height: 400px;
+  margin-bottom: 30px;
+  padding: 20px 30px 20px 30px;
+}
+.welfare_anal .anal_region ul li:nth-child(odd){
+  margin-right: 2%;
+}
+.welfare_anal .anal_region ul li:nth-child(5){
+  width: 80%;
+}
+.welfare_anal .anal_region ul li:nth-child(6){
+  width: 80%;
+}
+.welfare_anal .anal_region ul li:nth-child(7){
+  width: 80%;
+}
+.welfare_anal .anal_region ul li span{
+  font-size: 20px;
+  color: #9E9E9E;
+}
+.welfare_anal .anal_region ul li:nth-child(1) .region_cities {
+  float: right;
+  border: 2px solid #1F74F2;
+  height: 35px;
+  width: 244px;
+  border-radius: 5px;
+}
+.welfare_anal .anal_region ul li:nth-child(1) .region_cities span{
+  display: block;
+  float: left;
+  height: 33px;
+  width: 80px;
+  margin: 0px;
+  outline: none;
+  border-right: 2px solid #1F74F2;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+}
+.welfare_anal .anal_region ul li:nth-child(1) .region_cities span.citiesCur{
+  background: #1F74F2;
+  color: white;
+}
+.welfare_anal .anal_region ul li:nth-child(1) .region_cities span:last-child{
+  border-right: 0px;
+}
+#anal_phones_fir{
+  width: 800px;
+  height: 200px;
+  margin-top: 70px;
+}
+.welfare_anal .anal_region .region_content div.regionChange{
+  display: none;
+}
+.welfare_anal .anal_region .region_content div.change_cur{
+  display: block;
+}
+
+.welfare_anal .anal_region ul li #anal_map{
+  height: 350px;
+  width: 350px;
+  float: left;
+}
+.welfare_anal .anal_region ul li .map_list{
+  border: 0;
+  font-size: 14px;
+}
+.welfare_anal .anal_region ul li .map_list span{
+  font-size: 14px;
+  color: #989898;
+}
+.welfare_anal .anal_region ul li .map_list td{
+  border: 0px;
+}
+.welfare_anal .anal_region ul li .map_list .map_co{
+  color: #989898;
+}
+.welfare_anal .anal_region ul li .map_list .map_le{
+  font-size: 14px;
+}
+.welfare_anal .anal_region ul li #anal_age{
+  height: 400px;
+  width: 500px;
+}
+.welfare_anal .anal_region ul li #anal_industry{
+  height: 400px;
+  width: 700px;
+}
+.welfare_anal .anal_region ul li #anal_sex{
+  height: 200px;
+  width: 550px;
+}
+.welfare_anal .anal_region ul li .sex_img{
+  width: 550px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-bottom: -40px;
+  margin-top: 30px;
+}
+.welfare_anal .anal_region ul li .sex_img .sexy{
+  width: 80px;
+  height: 136.8px;
+}
+.welfare_anal .anal_region ul li .sex_img .sexy_un{
+  width: 40px;
+  height: 40px;
+}
+.welfare_anal .anal_region ul li .anal_phonesSec_span{
+  float: left;
+}
+.welfare_anal .anal_region ul li #anal_phones_sec{
+  float: left;  
+  width: 400px;
+  height: 400px;
+}
+.welfare_anal .anal_region ul li .phones_list{
+  /* float: left; */
+  width: 200px;
+  color: #9B9A9A;
+  font-size: 16px;
+  border: 0px;
+}
+.welfare_anal .anal_region ul li .phones_list th{
+  width: 160px;
+  background: #F5F5F9;
+  height: 45px;
+  text-align: start;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  font-size: 14px;
+  padding-right: 120px;
+}
+.welfare_anal .anal_region ul li .phones_list td{
+  height: 45px;
+  border: 0px;
+  border-bottom: 1px solid #CCCCCC;
+  padding-right: 120px;
+}
+.welfare_anal .anal_region ul li .phones_list td .phones_num{
+  font-size: 16px;
+}
+.welfare_anal .anal_region ul li .phones_list td .phones_bar{
+  background: #44B548;
+  width: 50px;
+  height: 9px;
+  display: inline-block;
+}

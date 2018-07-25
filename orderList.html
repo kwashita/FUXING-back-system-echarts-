@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>订单列表</title>
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link rel=stylesheet href="css/bootstrap.css">
+        <link href="css/style.css" rel="stylesheet" />
+        <link rel=stylesheet href="css/common.css">
+        <link rel=stylesheet href="css/orderList.css">
+        <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <style type="text/css">
+            html{
+                background:#f3f7fb;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="page-header header">
+            <h1>群福利管理平台
+                <div class="change_user">
+                    <p class="quite"><span class="quite1">修改密码</span><span class="quite2">退出</span></p>
+                    <p style="margin-top: 28px;"><span>admin</span>,欢迎您登录互动服务平台管理平台</p>
+                </div>
+            </h1>
+        </div>
+        <!--内容区-->
+        <div class="fl_wrap">
+            <!--左侧导航-->
+            <ul class="list-group fl_left_nav">
+                <li class="list-group-item ">
+                    <a href="数据概览.html">数据概览</a>
+                </li>
+                <li class="list-group-item ">
+                    <a href="福利企业.html">福利企业</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="福利管理.html">福利管理</a>
+                </li>
+                <li class="list-group-item sed">
+                    <a href="福星中心.html">福星中心</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="福群管理.html">福群管理</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="提现记录.html">提现记录</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="财务管理.html">财务管理</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="系统设置.html">系统设置</a>
+                </li>
+            </ul>
+
+            <!--右侧内容区-->
+            <div class="fl_rightcount">
+                <!--右侧第一层-->
+                <!--面包屑导航-->
+                <div class="container">
+                    <div class="comm-localtion row">
+                        <i class="comm-icon-localtion"></i>
+                        <span class="">当前位置：订单管理&gt;<i class="comm-text-localtion">福利订单</i></span>
+                    </div>
+                    <div class="content">
+                        <div class="tools-box">
+                            <div class="row">
+                                <input class="span4 inp" type="text" placeholder="请输入订单号/福利名称/企业名称/买家信息" name="" value="">
+                                <span class="tools-title">订单状态</span>
+                                <select class="span2 select" name="">
+                                    <option value="">全部</option>
+                                </select>
+                                <span class="tools-title">订单类型</span>
+                                <select class="span2 select" name="">
+                                    <option value="">全部</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <span class="tools-title">售后状态</span>
+                                <select class="span2 select" name="">
+                                    <option value="">全部</option>
+                                </select>
+                                <span class="tools-title">订单时间</span>
+                                <select class="span2 select" name="">
+                                    <option value="">全部</option>
+                                </select>
+                                <span class="to-line">—</span>
+                                <select class="span2 select" name="">
+                                    <option value="">全部</option>
+                                </select>
+                                <input type="button" class="button search-btn orange-btn" name="" value="搜索">
+                                <input type="button" class="button gray-btn" name="" value="重置">
+                            </div>
+                        </div>
+                        <div class="list-tab">
+                            <div class="list-tab-item active">全部</div>
+                            <div class="list-tab-item">待付款</div>
+                            <div class="list-tab-item">已付款</div>
+                            <div class="list-tab-item">已发货</div>
+                            <div class="list-tab-item">已完成</div>
+                            <div class="list-tab-item">已退款</div>
+                        </div>
+                        <div class="list-content">
+                            <div class="list-item list-title row">
+                                <div class="checkBox">
+                                    <input type="checkbox">
+                                </div>
+                                <div class="welfare-name">福利信息</div>
+                                <div class="mw100">企业名称</div>
+                                <div class="mw80">订单金额</div>
+                                <div class="mw80">数量</div>
+                                <div class="mw100">买家</div>
+                                <div class="mw80">订单类型</div>
+                                <div class="mw80">售后状态</div>
+                                <div class="mw80">订单状态</div>
+                                <div class="mw100">应付金额</div>
+                                <div class="opreat">操作</div>
+                            </div>
+                            <!-- 第一条订单start -->
+                            <div class="number-time">
+                                <div class="order-number">订单号：201853659544266</div>
+                                <div class="order-time">付款时间：2018-03-13 20:21:11</div>
+                            </div>
+                            <div class="list-item list-item-info row">
+                                <div class="checkBox" >
+                                    <input type="checkbox">
+                                </div>
+                                <div class="welfare-name" title='价值200元体检体验价值200元体检'>
+                                    <img src="images/wenhao.png" alt="">价值200元体检体验价值200元体检</div>
+                                <div class="mw100">益牙网</div>
+                                <div class="mw80">￥ 30.00</div>
+                                <div class="mw80">2</div>
+                                <div class="mw100">露露酱 <br><span class="phone">18519275483</span></div>
+                                <div class="mw80">福利商品</div>
+                                <div class="mw80">无</div>
+                                <div class="mw80">已付款</div>
+                                <div class="mw100 lh12">
+                                    <span class="money">￥79.80</span><br>
+                                    <span>优惠-￥39.90</span><br>
+                                    <span>运费￥0.00</span>
+                                </div>
+                                <div class="opreat">
+                                    <span class="op-item">查看</span>
+                                </div>
+                            </div>
+                            <div class="oreder-info-sum">
+                                <span>共2件福利</span>
+                                <span class="fact-money">实收金额：
+                                    <span class="text-orange">￥<i class="big-text text-orange">79.80</i></span>
+                                </span>
+                                <span class="text-orange"><i class="big-text">200</i>福币</span>
+                            </div>
+                            <!-- 第一条订单end -->
+                            <!-- 第二条订单start -->
+                            <div class="number-time">
+                                <div class="order-number">订单号：201853659544266</div>
+                                <div class="order-time">付款时间：2018-03-13 20:21:11</div>
+                            </div>
+                            <div class="list-item list-item-info row">
+                                <div class="checkBox" >
+                                    <input type="checkbox">
+                                </div>
+                                <div class="welfare-name" title='价值200元体检体验价值200元体检'>
+                                    <img src="images/wenhao.png" alt="">价值200元体检体验价值200元体检</div>
+                                <div class="mw100">益牙网</div>
+                                <div class="mw80">￥ 30.00</div>
+                                <div class="mw80">2</div>
+                                <div class="mw100">露露酱 <br><span class="phone">18519275483</span></div>
+                                <div class="mw80">福利商品</div>
+                                <div class="mw80 text-red">退款</div>
+                                <div class="mw80">已付款</div>
+                                <div class="mw100 lh12">
+                                    <span class="money">￥79.80</span><br>
+                                    <span>优惠-￥39.90</span><br>
+                                    <span>运费￥0.00</span>
+                                </div>
+                                <div class="opreat">
+                                    <span class="op-item text-orange">发货</span>
+                                    <span class="op-item">查看</span>
+                                </div>
+                            </div>
+                            <div class="oreder-info-sum">
+                                <span>共2件福利</span>
+                                <span class="fact-money">实收金额：
+                                    <span class="text-orange">￥<i class="big-text text-orange">79.80</i></span>
+                                </span>
+                                <span class="text-orange"><i class="big-text">200</i>福币</span>
+                            </div>
+                            <!-- 第二条订单end -->
+                            <div class="list-content-foot row">
+                                <div class="foot-left">
+                                    <div class="selectAll">
+                                        <input id="selectAll" type="checkbox" name="" value="">
+                                        <span>全选</span>
+                                    </div>
+                                    <div class="delate-btn"></div>
+                                </div>
+                                <div class="foot-right">
+                                    <span>共有 22条 记录，每页显示</span>
+                                    <select name="" class="showItems">
+                                        <option value="">10</option>
+                                    </select>
+                                    <i class="last-page changePage disabled">&lt;</i>
+                                    <span>1/3</span>
+                                    <i class="next-page changePage">&gt;</i>
+                                    <input type="text" class="turnPages" value="1">
+                                    <input type="button" name="" value="跳转" class="turnPages-btn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 删除提示弹框 -->
+                    <div class="model-alert delate-alert">
+                        <div class="model-alert-content">
+                            <div class="model-alert-title">
+                                <span>提示</span>
+                                <i class="icon-close"></i>
+                            </div>
+                            <div class="wenhao-green"></div>
+                            <p class="succ-text">是否确认删除选中福利</p>
+                            <div class="model-alert-btnBox">
+                                <input class="model-alert-btn sure" type="button" name="" value="确定">
+                                <input class="model-alert-btn cancel" type="button" name="" value="取消">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 保存成功提示 -->
+                    <div class="success-tips">
+                        <i class="icon-succ"></i>
+                        <span>保存成功</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        $('.icon-close,.model-alert-btn.cancel').click(function(){
+            $('.model-alert').fadeOut(500);
+        })
+        $('.model-alert-btn.sure').click(function() {
+            $('.model-alert').fadeOut(500,function(){
+                $('.success-tips').fadeIn().delay(2000).fadeOut();
+            });
+        });
+        $('.ecode-hover').mouseover(function() {
+            $(this).parent('.opreat').find('.ecode-box').fadeIn(400);
+        });
+        $('.ecode-hover').mouseout(function() {
+            $(this).parent('.opreat').find('.ecode-box').fadeOut(400);
+        });
+    </script>
+</html>
