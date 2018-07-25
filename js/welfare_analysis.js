@@ -341,7 +341,7 @@ option = {
     {
       name: '行业分布',
       type: 'bar',
-      barWidth: '60%',
+      barWidth: '80%',
       data: [10, 52, 200, 334, 390, 330, 220, 100, 200, 30],
       itemStyle: {
         normal: {
