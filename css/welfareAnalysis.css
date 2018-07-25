@@ -71,12 +71,15 @@
 }
 .welfare_anal .anal_region ul li:nth-child(5){
   width: 80%;
+  height: 500px;
 }
 .welfare_anal .anal_region ul li:nth-child(6){
   width: 80%;
+  height: 300px;
 }
 .welfare_anal .anal_region ul li:nth-child(7){
   width: 80%;
+  height: 500px;
 }
 .welfare_anal .anal_region ul li span{
   font-size: 20px;
@@ -111,7 +114,6 @@
 #anal_phones_fir{
   width: 800px;
   height: 200px;
-  margin-top: 70px;
 }
 .welfare_anal .anal_region .region_content div.regionChange{
   display: none;
@@ -147,7 +149,7 @@
   width: 500px;
 }
 .welfare_anal .anal_region ul li #anal_industry{
-  height: 400px;
+  height: 380px;
   width: 700px;
 }
 .welfare_anal .anal_region ul li #anal_sex{
@@ -173,17 +175,25 @@
 .welfare_anal .anal_region ul li .anal_phonesSec_span{
   float: left;
 }
+.welfare_anal .anal_region ul li.anal_phone_li{
+  position: relative;
+}
 .welfare_anal .anal_region ul li #anal_phones_sec{
-  float: left;  
   width: 400px;
   height: 400px;
+  position: absolute;
+  top: 40px;
+  left: 60px;
 }
 .welfare_anal .anal_region ul li .phones_list{
   /* float: left; */
-  width: 200px;
+  width: 400px;
   color: #9B9A9A;
   font-size: 16px;
   border: 0px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
 .welfare_anal .anal_region ul li .phones_list th{
   width: 160px;
@@ -193,20 +203,31 @@
   border-top: 1px solid #CCCCCC;
   border-bottom: 1px solid #CCCCCC;
   font-size: 14px;
-  padding-right: 120px;
 }
 .welfare_anal .anal_region ul li .phones_list td{
   height: 45px;
   border: 0px;
   border-bottom: 1px solid #CCCCCC;
-  padding-right: 120px;
+  width: 260px;
+  margin-right: 10px;
+  position: relative;
 }
 .welfare_anal .anal_region ul li .phones_list td .phones_num{
   font-size: 16px;
+  width:40%;
 }
 .welfare_anal .anal_region ul li .phones_list td .phones_bar{
   background: #44B548;
   width: 50px;
   height: 9px;
   display: inline-block;
+  position: absolute;
+  right:94px;
+  top: 19px;
+}
+.welfare_anal .anal_region ul li #anal_edu{
+  width: 700px;
+  height: 200px;
+  margin-left: -35px;
+  margin-top: 45px;
 }

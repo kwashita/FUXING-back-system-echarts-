@@ -6,7 +6,7 @@ $('.region_cities>span').on('click', function () {
 });
 // 地域分布
 function randomData() {
-  return Math.round(Math.random() * 600);
+  return Math.round(Math.random() * 200);
 }
 var mydata = [
   { name: '北京', value: '100' }, { name: '天津', value: randomData() },
@@ -37,14 +37,14 @@ var optionMap = {
     show: true,
     x: 'left',
     y: 'center',
-    splitList: [
-      { start: 500, end: 600 }, 
-      { start: 400, end: 500 },
-      { start: 300, end: 400 }, 
-      { start: 200, end: 300 },
-      { start: 100, end: 200 }, 
-      { start: 0, end: 100 },
-    ],
+    // splitList: [
+    //   { start: 500, end: 600 }, 
+    //   { start: 400, end: 500 },
+    //   { start: 300, end: 400 }, 
+    //   { start: 200, end: 300 },
+    //   { start: 100, end: 200 }, 
+    //   { start: 0, end: 100 },
+    // ],
     color: ['#3EC7F4', '#59C8ED', '#71CAE8', '#A2D2E2', '#CBDFE5', '#DDE6EA']
   },
 
@@ -197,6 +197,91 @@ sex_option = {
 };
 
 sex_dom.setOption(sex_option);
+// 学历分布
+var edu_dom = echarts.init(document.getElementById('anal_edu'));
+
+edu_option = {
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+      type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+    },
+  },
+  legend: {
+    data: ['未知', '初中', '高中', '本科', '硕士', '博士'],
+    x: '120px',
+    y: 'bottom',
+  },
+  calculable: true,
+  xAxis: [
+    {
+      type: 'value',
+      show: false,
+    }
+  ],
+  yAxis: [
+    {
+      type: 'category',
+      data: [''],
+      show: false
+    }
+  ],
+  series: [
+    {
+      name: '未知',
+      type: 'bar',
+      stack: '终端',
+      itemStyle: { normal: { label: { show: false, position: 'insideLeft', formatter: '{c}%' } } },
+      data: [50],
+      color: '#0DA4AE'
+    },
+    {
+      name: '初中',
+      type: 'bar',
+      stack: '终端',
+      itemStyle: { normal: { label: { show: false, position: 'insideLeft', formatter: '{c}%' } } },
+      data: [14],
+      color: '#96E9EE'
+    },
+    {
+      name: '高中',
+      type: 'bar',
+      stack: '终端',
+      itemStyle: { normal: { label: { show: false, position: 'insideLeft', formatter: '{c}%' } } },
+      data: [36],
+      color: '#65DDE5'
+    }
+    ,
+    {
+      name: '本科',
+      type: 'bar',
+      stack: '终端',
+      itemStyle: { normal: { label: { show: false, position: 'insideLeft', formatter: '{c}%' } } },
+      data: [36],
+      color: '#8CC151'
+    },
+    ,
+    {
+      name: '硕士',
+      type: 'bar',
+      stack: '终端',
+      itemStyle: { normal: { label: { show: false, position: 'insideLeft', formatter: '{c}%' } } },
+      data: [36],
+      color: '#39D2DC'
+    },
+    ,
+    {
+      name: '博士',
+      type: 'bar',
+      stack: '终端',
+      itemStyle: { normal: { label: { show: false, position: 'insideLeft', formatter: '{c}%' } } },
+      data: [36],
+      color: '#1CBEC9'
+    }
+  ]
+};
+
+edu_dom.setOption(edu_option);
 // 行业分布
 var seriesLabel = {
   normal: {
@@ -237,7 +322,7 @@ option = {
   yAxis: [
     {
       type: 'category',
-      data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun', '第八个', '第九个', '其他'],
+      data: ['IT', '食品消费', '建筑业', '汽车制造业', '租赁业', '餐饮', '教育', '医疗', '体育', '其他'],
       axisTick: {
         alignWithLabel: true
       },
@@ -250,7 +335,7 @@ option = {
         show: false,
       }
     },
-    
+
   ],
   series: [
     {
@@ -283,16 +368,36 @@ option = {
     }
   },
   legend: {
-    data: ['未知', 'iPhone', 'Android']
+    data: ['未知', 'iPhone', 'Android'],
+    x: 'center',
+    y: 'bottom',
   },
   calculable: true,
   xAxis: [
     {
       type: 'value',
-      min: 0,
-      interval: 500
+      interval: 500,
+      show: true,
+      axisLabel: {
+        show: true, //这行代码控制着坐标轴x轴的文字是否显示
+        color: '#000'
+      },
+      splitLine: {
+        show: true, // 网格线是否显示
+        // 改变样式
+        lineStyle: {
+          color: '#fff' // 修改网格线颜色
+        }
+      },
+      axisLine: {
+        lineStyle: {
+          color: '#fff', // x坐标轴的轴线颜色
+          width: 0 //这里是坐标轴的宽度,为0就是不显示
+        }
+      }
     }
   ],
+
   yAxis: [
     {
       type: 'category',
@@ -338,6 +443,29 @@ myChart.setOption({
       name: '访问来源',
       type: 'pie',
       radius: '55%',
+      itemStyle: {
+        normal: {
+          label: {
+            show: false,
+            position: 'inside'
+          },
+          labelLine: {
+            show: true   //隐藏标示线
+          }
+        },
+        emphasis: {
+          label: {
+            show: true,
+            formatter: " {b} {c}%",
+            position: 'center',
+            textStyle: {
+              fontSize: '10',
+              fontWeight: 'bold'
+            }
+          }
+        }
+
+      },
       data: [
         { value: 5515, name: '未知', itemStyle: { color: '#44B548' } },
         { value: 242, name: 'OPPO R9S', itemStyle: { color: '#4A91E3' } },
